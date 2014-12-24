@@ -9,6 +9,10 @@
     padding-right: 15px;
 }
 
+h1 {
+    font: 22px Georgia, Arial, Helvetica, sans-serif;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
@@ -40,3 +44,148 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+/* slider */
+#slider1_container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: block;
+}
+
+    #slider1_container div[u="loading"] {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+        #slider1_container div[u="loading"] div:first-child {
+            filter: alpha(opacity=70);
+            opacity:0.7;
+            position: absolute;
+            display: block;
+            background-color: #000000;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height:100%;
+        }
+
+        #slider1_container div[u="loading"] div:last-child {
+            position: absolute;
+            display: block;
+            background: url(../Content/Slider/Images/loading.gif) no-repeat center center;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height:100%;
+        }
+
+    #slider1_container div[u="slides"] {
+        cursor: move;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    /* jssor slider bullet navigator skin 05 css */
+    /*
+    .jssorb05 div           (normal)
+    .jssorb05 div:hover     (normal mouseover)
+    .jssorb05 .av           (active)
+    .jssorb05 .av:hover     (active mouseover)
+    .jssorb05 .dn           (mousedown)
+    */
+    .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        background: url(../Content/Slider/Images/b05.png) no-repeat;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .jssorb05 div {
+        background-position: -7px -7px;
+    }
+
+        .jssorb05 div:hover, .jssorb05 .av:hover {
+            background-position: -37px -7px;
+        }
+
+    .jssorb05 .av {
+        background-position: -67px -7px;
+    }
+
+    .jssorb05 .dn, .jssorb05 .dn:hover {
+        background-position: -97px -7px;
+    }
+
+    /*#slider1_container div[u="navigator"] {
+        
+    }*/
+
+    #slider1_container div[u="prototype"] {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+    }
+
+    /* jssor slider arrow navigator skin 12 css */
+    /*
+    .jssora12l              (normal)
+    .jssora12r              (normal)
+    .jssora12l:hover        (normal mouseover)
+    .jssora12r:hover        (normal mouseover)
+    .jssora12ldn            (mousedown)
+    .jssora12rdn            (mousedown)
+    */
+    .jssora12l, .jssora12r, .jssora12ldn, .jssora12rdn {
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        background: url(../Content/Slider/Images/a12.png) no-repeat;
+        overflow: hidden;
+    }
+
+    .jssora12l {
+        background-position: -16px -37px;
+    }
+
+    .jssora12r {
+        background-position: -75px -37px;
+    }
+
+    .jssora12l:hover {
+        background-position: -136px -37px;
+    }
+
+    .jssora12r:hover {
+        background-position: -195px -37px;
+    }
+
+    .jssora12ldn {
+        background-position: -256px -37px;
+    }
+
+    .jssora12rdn {
+        background-position: -315px -37px;
+    }
+
+    #slider1_container span[u="arrowleft"] {
+        width: 30px;
+        height: 46px;
+        top: 123px;
+        left: 0px;
+    }
+
+    #slider1_container span[u="arrowright"] {
+        width: 30px;
+        height: 46px;
+        top: 123px;
+        right: 0px;
+    }
+

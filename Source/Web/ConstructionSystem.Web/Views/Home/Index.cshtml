@@ -2,30 +2,56 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div id="slider1_container">
+    <!-- Loading Screen -->
+    <div u="loading">
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Slides Container -->
+    <div u="slides">
+        <div>
+            <img u="image" src="~/Content/Slider/Images/01.jpg" />
+        </div>
+        <div>
+            <img u="image" src="~/Content/Slider/Images/02.jpg" />
+        </div>
+        <div>
+            <img u="image" src="~/Content/Slider/Images/01.jpg" />
+        </div>
+        <div>
+            <img u="image" src="~/Content/Slider/Images/02.jpg" />
+        </div>
+    </div>
+
+    <!-- Bullet Navigator Skin Begin -->
+    <!-- Bullet navigator container -->
+    <div u="navigator" class="jssorb05" style="position: absolute; top: 270px; right: 6px; width: 250px; height: 16px; left: 175px;">
+        <!-- bullet navigator item prototype -->
+        <div u="prototype"></div>
+    </div>
+    <!-- Bullet Navigator Skin End -->
+    <!-- Arrow Navigator Skin Begin -->
+    <!-- Arrow Left -->
+    <span u="arrowleft" class="jssora12l"></span>
+    <!-- Arrow Right -->
+    <span u="arrowright" class="jssora12r"></span>
+    <!-- Arrow Navigator Skin End -->
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="col-xs-6 col-sm-6 col-lg-8">
+        <h1>Welcome to our website</h1>
+        <div>
+            This is a best place for kitchen and floor solutions.Offering a large range of kitchen interiors, designer and bespoke kitchen at a affordable prices in London. We offer a wide selection of styles flooring – laminate, engineered wood flooring, solid wood flooring, parquet, Safety Flooring (vinyl).
+        </div>
     </div>
 </div>
+
+
+@section scripts{
+    <script src="~/Content/Slider/Scripts/jssor.js"></script>
+    <script src="~/Content/Slider/Scripts/jssor.slider.js"></script>
+    <script src="~/Content/Slider/Scripts/jssor.custom.js"></script>
+}

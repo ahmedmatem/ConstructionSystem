@@ -173,6 +173,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Slider\Images\01.jpg" />
+    <Content Include="Content\Slider\Images\02.jpg" />
+    <Content Include="Content\Slider\Images\a12.png" />
+    <Content Include="Content\Slider\Images\b05.png" />
+    <Content Include="Content\Slider\Images\loading.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -195,6 +200,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Content\Slider\Scripts\jssor.custom.js" />
+    <Content Include="Content\Slider\Scripts\jssor.js" />
+    <Content Include="Content\Slider\Scripts\jssor.slider.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -260,7 +268,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1946</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1403/</IISUrl>
+          <IISUrl>http://localhost:1405/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
